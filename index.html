@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pandit Ji Booking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{color:#222;overflow-x:hidden}
+
+/* Background */
+.bg{
+  position:fixed;inset:0;
+  background:
+    radial-gradient(circle at 10% 20%, #ffd27f, transparent 40%),
+    radial-gradient(circle at 80% 30%, #ffb347, transparent 40%),
+    linear-gradient(120deg,#ff9933,#ffcc70,#ff9933);
+  background-size:200% 200%;
+  animation:bgMove 12s infinite ease;
+  opacity:.18;z-index:-1;
+}
+@keyframes bgMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* Navbar */
+nav{
+  position:sticky;top:0;background:#fff;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 25px;box-shadow:0 4px 20px rgba(0,0,0,.08);z-index:10
+}
+.logo{font-weight:700;font-size:22px;color:#ff9933}
+nav ul{list-style:none;display:flex;gap:22px}
+nav a{text-decoration:none;color:#333;font-weight:500;position:relative}
+nav a::after{
+  content:'';position:absolute;left:0;bottom:-5px;width:0;height:2px;
+  background:#ff9933;transition:.3s
+}
+nav a:hover::after{width:100%}
+.menu-icon{display:none;font-size:26px;cursor:pointer}
+
+/* Hero */
+.hero{padding:80px 20px}
+.hero-box{
+  max-width:1100px;margin:auto;
+  display:flex;align-items:center;gap:40px
+}
+.hero-left h1{font-size:38px}
+.hero-left p{margin-top:15px;font-size:17px}
+.hero-btns{margin-top:25px}
+.call-btn{
+  background:#ff9933;color:#fff;
+  padding:14px 26px;border:none;border-radius:50px;
+  font-size:16px;cursor:pointer;animation:pulse 2s infinite
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(255,153,51,.6)}
+  70%{box-shadow:0 0 0 18px rgba(255,153,51,0)}
+  100%{box-shadow:0 0 0 0 rgba(255,153,51,0)}
+}
+.hero-btns a{
+  margin-left:12px;text-decoration:none;
+  border:2px solid #ff9933;padding:12px 22px;
+  border-radius:50px;color:#ff9933
+}
+.hero-right img{width:300px;animation:float 3s ease-in-out infinite}
+@keyframes float{
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-15px)}
+  100%{transform:translateY(0)}
+}
+
+/* Services */
+.services{padding:60px 20px;text-align:center}
+.service-grid{
+  margin-top:30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;max-width:1000px;margin:auto
+}
+.service{
+  background:#fff;padding:25px;border-radius:15px;
+  box-shadow:0 8px 25px rgba(0,0,0,.1);
+  transition:.3s
+}
+.service:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 35px rgba(255,153,51,.35)
+}
+
+/* Google Form */
+.form{padding:60px 20px;text-align:center}
+.form iframe{
+  width:100%;max-width:640px;height:700px;
+  border:none;border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.15)
+}
+
+/* About */
+.about{padding:50px 20px;text-align:center}
+.about-box{
+  margin-top:20px;display:inline-block;
+  background:#fff;padding:20px 30px;border-radius:15px;
+  box-shadow:0 8px 25px rgba(0,0,0,.1)
+}
+
+/* Footer */
+footer{
+  background:#111;color:#eee;text-align:center;
+  padding:30px 15px;font-size:14px
+}
+
+/* THANK YOU POPUP */
+#thankYou{
+  position:fixed;inset:0;
+  background:rgba(0,0,0,.6);
+  display:none;align-items:center;justify-content:center;
+  z-index:999
+}
+.thank-box{
+  background:#fff;padding:35px 30px;
+  border-radius:18px;text-align:center;
+  max-width:320px;animation:pop .4s ease
+}
+@keyframes pop{
+  0%{transform:scale(.7);opacity:0}
+  100%{transform:scale(1);opacity:1}
+}
+.thank-box h2{color:#ff9933;margin-bottom:10px}
+.thank-box button{
+  margin-top:15px;padding:10px 20px;
+  border:none;border-radius:25px;
+  background:#ff9933;color:#fff;cursor:pointer
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .hero-box{flex-direction:column-reverse;text-align:center}
+  .hero-left h1{font-size:28px}
+  nav ul{display:none;position:absolute;top:60px;right:20px;
+    background:#fff;flex-direction:column;
+    width:160px;padding:15px;border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15)}
+  nav ul.show{display:flex}
+  .menu-icon{display:block}
+}
+</style>
+</head>
+
+<body>
+<div class="bg"></div>
+
+<nav>
+  <div class="logo">🕉️ Pandit ji Booking</div>
+  <ul id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</nav>
+
+<section class="hero">
+  <div class="hero-box">
+    <div class="hero-left">
+      <h1>Verified Pandits for Sacred Hindu Rituals</h1>
+      <p>Personally verified pandits for all major Hindu rituals.</p>
+      <div class="hero-btns">
+        <button class="call-btn" onclick="scrollToForm()">Request a Callback</button>
+        <a href="tel:9431683881">Call Now</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="pandit.png" alt="Pandit Ji">
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <h2>Our Services</h2>
+  <div class="service-grid">
+    <div class="service">Griha Pravesh Puja</div>
+    <div class="service">Havan / Yagya</div>
+    <div class="service">Terahvi / Shradh</div>
+    <div class="service">Satyanarayan Katha</div>
+    <div class="service">Birthday Pooja</div>
+    <div class="service">General Pooja</div>
+  </div>
+</section>
+
+<section class="form" id="contact">
+  <h2>Request a Callback</h2>
+
+  <iframe id="gform"
+    src="https://forms.gle/qYsSDQTXcnC1bwSt6?embedded=true"
+    loading="lazy">
+  </iframe>
+</section>
+
+<section class="about">
+  <h2>About Us</h2>
+
+  <p>
+    We personally understand your ritual requirement and assign
+    the most suitable pandit.
+  </p>
+  <div class="about-box">
+    ✔ Verified Pandits &nbsp; ✔ Human Support &nbsp; ✔ Clear Guidance
+  </div>
+</section>
+
+<footer>
+  📞 9431683881 | ✉️ surya286351@gmail.com <br>
+  © 2026 Pandit Booking
+</footer>
+
+<!-- THANK YOU POPUP -->
+<div id="thankYou">
+  <div class="thank-box">
+    <h2>🙏 Thank You!</h2>
+    <p>Your request has been received.<br>We will call you shortly.</p>
+    <button onclick="closeThank()">Close</button>
+  </div>
+</div>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("show");
+}
+function scrollToForm(){
+  document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+}
+
+/* Detect Google Form submit */
+let firstLoad = true;
+document.getElementById("gform").addEventListener("load", function(){
+  if(!firstLoad){
+    document.getElementById("thankYou").style.display="flex";
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+  firstLoad = false;
+});
+
+function closeThank(){
+  document.getElementById("thankYou").style.display="none";
+}
+</script>
+
+</body>
+</html>
