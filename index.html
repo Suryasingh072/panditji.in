@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<title>Pandit Ji Booking</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 🔥 SEO TITLE -->
+<title>Pandit Ji Booking Near Me | Book Pandit for Puja & Havan</title>
+
+<!-- 🔥 SEO META -->
+<meta name="description" content="Book verified pandit ji near you for Griha Pravesh, Havan, Satyanarayan Puja, Terahvi & more. Trusted pandit booking service in India.">
+
+<meta name="keywords" content="pandit ji near me, pandit booking, havan pandit, griha pravesh pandit, satyanarayan puja pandit">
+
+<meta name="author" content="Surya Pratap Singh">
+
+<!-- 🔥 Open Graph -->
+<meta property="og:title" content="Pandit Ji Booking Near You">
+<meta property="og:description" content="Book trusted pandits for puja, havan & rituals near you.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="pandit.png">
+
+<!-- 🔥 Local SEO -->
+<meta name="geo.region" content="IN">
+<meta name="geo.placename" content="India">
+
+<!-- 🔥 Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Pandit Ji Booking",
+  "image": "pandit.png",
+  "telephone": "9431683881",
+  "email": "surya286351@gmail.com",
+  "areaServed": "India",
+  "serviceType": "Religious Services"
+}
+</script>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -115,7 +149,7 @@ footer{
   padding:30px 15px;font-size:14px
 }
 
-/* THANK YOU POPUP */
+/* Popup */
 #thankYou{
   position:fixed;inset:0;
   background:rgba(0,0,0,.6);
@@ -131,12 +165,6 @@ footer{
   0%{transform:scale(.7);opacity:0}
   100%{transform:scale(1);opacity:1}
 }
-.thank-box h2{color:#ff9933;margin-bottom:10px}
-.thank-box button{
-  margin-top:15px;padding:10px 20px;
-  border:none;border-radius:25px;
-  background:#ff9933;color:#fff;cursor:pointer
-}
 
 /* Mobile */
 @media(max-width:768px){
@@ -149,14 +177,38 @@ footer{
   nav ul.show{display:flex}
   .menu-icon{display:block}
 }
+
+body{
+  margin:0;
+  color:#222;
+  overflow-x:hidden;
+
+  font: 400 16px/1.5 "Poppins", sans-serif;
+
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
+  background-repeat: repeat;
+
+  animation: bgScroll 1s linear infinite;
+}
+
+/* Grid moving animation */
+@keyframes bgScroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 50px 50px;
+  }
+}
 </style>
 </head>
 
 <body>
+
 <div class="bg"></div>
 
 <nav>
-  <div class="logo">🕉️ Pandit ji Booking</div>
+  <div class="logo">🕉️ Pandit Ji Booking</div>
   <ul id="navLinks">
     <li><a href="#">Home</a></li>
     <li><a href="#services">Services</a></li>
@@ -168,7 +220,7 @@ footer{
 <section class="hero">
   <div class="hero-box">
     <div class="hero-left">
-      <h1>Verified Pandits for Sacred Hindu Rituals</h1>
+      <h1>Book Verified Pandit Ji Near You for Puja & Havan</h1>
       <p>Personally verified pandits for all major Hindu rituals.</p>
       <div class="hero-btns">
         <button class="call-btn" onclick="scrollToForm()">Request a Callback</button>
@@ -176,7 +228,7 @@ footer{
       </div>
     </div>
     <div class="hero-right">
-      <img src="pandit.png" alt="Pandit Ji">
+      <img src="pandit.png" alt="Pandit Ji for Puja Booking">
     </div>
   </div>
 </section>
@@ -204,10 +256,8 @@ footer{
 
 <section class="about">
   <h2>About Us</h2>
-
   <p>
-    We personally understand your ritual requirement and assign
-    the most suitable pandit.
+    Book trusted pandit ji near you for all Hindu rituals with proper guidance.
   </p>
   <div class="about-box">
     ✔ Verified Pandits &nbsp; ✔ Human Support &nbsp; ✔ Clear Guidance
@@ -219,12 +269,10 @@ footer{
   © 2026 Pandit Booking
 </footer>
 
-<!-- THANK YOU POPUP -->
 <div id="thankYou">
   <div class="thank-box">
     <h2>🙏 Thank You!</h2>
     <p>Your request has been received.<br>We will call you shortly.</p>
-    <button onclick="closeThank()">Close</button>
   </div>
 </div>
 
@@ -235,8 +283,6 @@ function toggleMenu(){
 function scrollToForm(){
   document.getElementById("contact").scrollIntoView({behavior:"smooth"});
 }
-
-/* Detect Google Form submit */
 let firstLoad = true;
 document.getElementById("gform").addEventListener("load", function(){
   if(!firstLoad){
@@ -245,10 +291,6 @@ document.getElementById("gform").addEventListener("load", function(){
   }
   firstLoad = false;
 });
-
-function closeThank(){
-  document.getElementById("thankYou").style.display="none";
-}
 </script>
 
 </body>
