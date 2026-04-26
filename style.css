@@ -610,8 +610,24 @@ ul { list-style: none; }
   .trust-container { flex-direction: column; }
   .trust-divider { width: 60px; height: 1px; }
   .booking-wrapper { padding: 28px 20px; }
-  .hero-image { display: none; }
   .about-visual { display: none; }
+
+  /* ── Pandit image mobile fix ── */
+  .hero-image {
+    display: flex !important;
+    order: -1;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .pandit-img {
+    max-height: 240px;
+    width: auto;
+    margin: 0 auto;
+  }
+  .mandala-ring { width: 250px; height: 250px; }
+  .floating-card { display: none; }
+  .image-glow { width: 180px; height: 180px; }
   .footer-container { grid-template-columns: 1fr; }
   .hero-btns { flex-direction: column; align-items: center; }
   .btn { width: 100%; justify-content: center; }
@@ -620,4 +636,23 @@ ul { list-style: none; }
   .hero-title { font-size: 1.9rem; }
   .section-title { font-size: 1.6rem; }
   .booking-wrapper { gap: 32px; }
+}
+
+/* ── Google Form Embed ── */
+.gform-wrapper {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,184,0,0.2);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.gform-wrapper iframe {
+  display: block;
+  min-height: 620px;
+  background: #fff;
+}
+.form-direct-link {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
