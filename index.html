@@ -1,297 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pandit Jii Booking in Lucknow | Book Pandit Near You</title>
+  <meta name="description" content="Book verified Pandit Jii in Lucknow for Griha Pravesh, Havan, Satyanarayan Katha, Shradh, Birthday Puja and all Hindu rituals. Same day booking available. Call 9431683881." />
+  <meta name="keywords" content="Pandit Jii Booking Lucknow, Book Pandit Lucknow, Pandit for Puja Lucknow, Griha Pravesh Pandit Lucknow, Havan Lucknow, Satyanarayan Katha Lucknow, Pandit Near Me Lucknow" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Pandit Jii Booking in Lucknow | Book Verified Pandit Near You" />
+  <meta property="og:description" content="Book trusted, verified pandits in Lucknow for all Hindu rituals. Fast booking, same-day service." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- 🔥 SEO TITLE -->
-<title>Pandit Ji Booking Near Me | Book Pandit for Puja & Havan</title>
-
-<!-- 🔥 SEO META -->
-<meta name="description" content="Book verified pandit ji near you for Griha Pravesh, Havan, Satyanarayan Puja, Terahvi & more. Trusted pandit booking service in India.">
-
-<meta name="keywords" content="pandit ji near me, pandit booking, havan pandit, griha pravesh pandit, satyanarayan puja pandit">
-
-<meta name="author" content="Surya Pratap Singh">
-
-<!-- 🔥 Open Graph -->
-<meta property="og:title" content="Pandit Ji Booking Near You">
-<meta property="og:description" content="Book trusted pandits for puja, havan & rituals near you.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="pandit.png">
-
-<!-- 🔥 Local SEO -->
-<meta name="geo.region" content="IN">
-<meta name="geo.placename" content="India">
-
-<!-- 🔥 Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Pandit Ji Booking",
-  "image": "pandit.png",
-  "telephone": "9431683881",
-  "email": "surya286351@gmail.com",
-  "areaServed": "India",
-  "serviceType": "Religious Services"
-}
-</script>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{color:#222;overflow-x:hidden}
-
-/* Background */
-.bg{
-  position:fixed;inset:0;
-  background:
-    radial-gradient(circle at 10% 20%, #ffd27f, transparent 40%),
-    radial-gradient(circle at 80% 30%, #ffb347, transparent 40%),
-    linear-gradient(120deg,#ff9933,#ffcc70,#ff9933);
-  background-size:200% 200%;
-  animation:bgMove 12s infinite ease;
-  opacity:.18;z-index:-1;
-}
-@keyframes bgMove{
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-
-/* Navbar */
-nav{
-  position:sticky;top:0;background:#fff;
-  display:flex;justify-content:space-between;align-items:center;
-  padding:14px 25px;box-shadow:0 4px 20px rgba(0,0,0,.08);z-index:10
-}
-.logo{font-weight:700;font-size:22px;color:#ff9933}
-nav ul{list-style:none;display:flex;gap:22px}
-nav a{text-decoration:none;color:#333;font-weight:500;position:relative}
-nav a::after{
-  content:'';position:absolute;left:0;bottom:-5px;width:0;height:2px;
-  background:#ff9933;transition:.3s
-}
-nav a:hover::after{width:100%}
-.menu-icon{display:none;font-size:26px;cursor:pointer}
-
-/* Hero */
-.hero{padding:80px 20px}
-.hero-box{
-  max-width:1100px;margin:auto;
-  display:flex;align-items:center;gap:40px
-}
-.hero-left h1{font-size:38px}
-.hero-left p{margin-top:15px;font-size:17px}
-.hero-btns{margin-top:25px}
-.call-btn{
-  background:#ff9933;color:#fff;
-  padding:14px 26px;border:none;border-radius:50px;
-  font-size:16px;cursor:pointer;animation:pulse 2s infinite
-}
-@keyframes pulse{
-  0%{box-shadow:0 0 0 0 rgba(255,153,51,.6)}
-  70%{box-shadow:0 0 0 18px rgba(255,153,51,0)}
-  100%{box-shadow:0 0 0 0 rgba(255,153,51,0)}
-}
-.hero-btns a{
-  margin-left:12px;text-decoration:none;
-  border:2px solid #ff9933;padding:12px 22px;
-  border-radius:50px;color:#ff9933
-}
-.hero-right img{width:300px;animation:float 3s ease-in-out infinite}
-@keyframes float{
-  0%{transform:translateY(0)}
-  50%{transform:translateY(-15px)}
-  100%{transform:translateY(0)}
-}
-
-/* Services */
-.services{padding:60px 20px;text-align:center}
-.service-grid{
-  margin-top:30px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;max-width:1000px;margin:auto
-}
-.service{
-  background:#fff;padding:25px;border-radius:15px;
-  box-shadow:0 8px 25px rgba(0,0,0,.1);
-  transition:.3s
-}
-.service:hover{
-  transform:translateY(-8px);
-  box-shadow:0 12px 35px rgba(255,153,51,.35)
-}
-
-/* Google Form */
-.form{padding:60px 20px;text-align:center}
-.form iframe{
-  width:100%;max-width:640px;height:700px;
-  border:none;border-radius:12px;
-  box-shadow:0 10px 30px rgba(0,0,0,.15)
-}
-
-/* About */
-.about{padding:50px 20px;text-align:center}
-.about-box{
-  margin-top:20px;display:inline-block;
-  background:#fff;padding:20px 30px;border-radius:15px;
-  box-shadow:0 8px 25px rgba(0,0,0,.1)
-}
-
-/* Footer */
-footer{
-  background:#111;color:#eee;text-align:center;
-  padding:30px 15px;font-size:14px
-}
-
-/* Popup */
-#thankYou{
-  position:fixed;inset:0;
-  background:rgba(0,0,0,.6);
-  display:none;align-items:center;justify-content:center;
-  z-index:999
-}
-.thank-box{
-  background:#fff;padding:35px 30px;
-  border-radius:18px;text-align:center;
-  max-width:320px;animation:pop .4s ease
-}
-@keyframes pop{
-  0%{transform:scale(.7);opacity:0}
-  100%{transform:scale(1);opacity:1}
-}
-
-/* Mobile */
-@media(max-width:768px){
-  .hero-box{flex-direction:column-reverse;text-align:center}
-  .hero-left h1{font-size:28px}
-  nav ul{display:none;position:absolute;top:60px;right:20px;
-    background:#fff;flex-direction:column;
-    width:160px;padding:15px;border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,.15)}
-  nav ul.show{display:flex}
-  .menu-icon{display:block}
-}
-
-body{
-  margin:0;
-  color:#222;
-  overflow-x:hidden;
-
-  font: 400 16px/1.5 "Poppins", sans-serif;
-
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
-  background-repeat: repeat;
-
-  animation: bgScroll 1s linear infinite;
-}
-
-/* Grid moving animation */
-@keyframes bgScroll {
-  from {
-    background-position: 0 0;
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Pandit Jii Booking – Lucknow",
+    "description": "Book verified pandits in Lucknow for Griha Pravesh, Havan, Katha and all Hindu rituals.",
+    "telephone": "+91-9431683881",
+    "email": "surya286351@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lucknow",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN"
+    },
+    "areaServed": "Lucknow",
+    "priceRange": "₹₹",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "100"
+    }
   }
-  to {
-    background-position: 50px 50px;
-  }
-}
-</style>
+  </script>
 </head>
-
 <body>
 
-<div class="bg"></div>
+  <!-- ══════════════════════════════════════ NAVBAR ══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">🕉</span>
+        <span class="logo-text">PanditJii <span class="logo-highlight">Lucknow</span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#booking" class="nav-link nav-cta">📞 Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-<nav>
-  <div class="logo">🕉️ Pandit Ji Booking</div>
-  <ul id="navLinks">
-    <li><a href="#">Home</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="menu-icon" onclick="toggleMenu()">☰</div>
-</nav>
+  <!-- ══════════════════════════════════════ HERO ══════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
 
-<section class="hero">
-  <div class="hero-box">
-    <div class="hero-left">
-      <h1>Book Verified Pandit Ji Near You for Puja & Havan</h1>
-      <p>Personally verified pandits for all major Hindu rituals.</p>
-      <div class="hero-btns">
-        <button class="call-btn" onclick="scrollToForm()">Request a Callback</button>
-        <a href="tel:9431683881">Call Now</a>
+    <div class="hero-container">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          🙏 Trusted by Lucknow families since years
+        </div>
+        <h1 class="hero-title">
+          Book <span class="gradient-text">Verified Pandit Jii</span><br/>
+          in Lucknow for<br/>
+          <span class="highlight-word">Puja &amp; Havan</span>
+        </h1>
+        <p class="hero-sub">
+          Fast booking in <strong>10 minutes</strong> · Trusted pandits across Lucknow ·
+          Peaceful, authentic rituals at your home
+        </p>
+        <div class="hero-btns">
+          <a href="#booking" class="btn btn-primary pulse">🔥 Book Pandit Now</a>
+          <a href="tel:9431683881" class="btn btn-outline">📞 Call Now: 9431683881</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-pill">⭐ 4.9 Rating</div>
+          <div class="trust-pill">✔ Verified Pandits</div>
+          <div class="trust-pill">⚡ Same Day Booking</div>
+        </div>
+      </div>
+
+      <div class="hero-image reveal-right">
+        <div class="image-glow"></div>
+        <div class="floating-card card-top">🙏 Puja Started!</div>
+        <div class="floating-card card-bottom">⚡ Booked in 8 min</div>
+        <img src="pandit.png" alt="Pandit Jii in Lucknow for Hindu Puja and Rituals" class="pandit-img floating" />
+        <div class="mandala-ring"></div>
       </div>
     </div>
-    <div class="hero-right">
-      <img src="pandit.png" alt="Pandit Ji for Puja Booking">
+
+    <div class="scroll-cue">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ TRUST BAR ══════════════════════════════════════ -->
+  <section class="trust-bar">
+    <div class="trust-container">
+      <div class="trust-item reveal">
+        <div class="trust-icon">⭐</div>
+        <div>
+          <div class="trust-num">4.9/5</div>
+          <div class="trust-label">Average Rating</div>
+        </div>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">🏠</div>
+        <div>
+          <div class="trust-num">100+</div>
+          <div class="trust-label">Happy Customers in Lucknow</div>
+        </div>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">✅</div>
+        <div>
+          <div class="trust-num">Verified</div>
+          <div class="trust-label">Background-Checked Pandits</div>
+        </div>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">⚡</div>
+        <div>
+          <div class="trust-num">Same Day</div>
+          <div class="trust-label">Booking Available</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ SERVICES ══════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <div class="section-tag">🛕 Our Services</div>
+        <h2 class="section-title">Puja & Ritual Services<br/><span class="gradient-text">in Lucknow</span></h2>
+        <p class="section-sub">All Hindu rituals conducted with full Vedic traditions by experienced pandits in Lucknow</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="card-glow"></div>
+          <div class="service-icon">🏡</div>
+          <h3>Griha Pravesh Puja</h3>
+          <p>Sacred home-entering ceremony with complete Vedic rituals to bless your new home in Lucknow with prosperity and peace.</p>
+          <a href="#booking" class="card-link">Book Now →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-glow"></div>
+          <div class="service-icon">🔥</div>
+          <h3>Havan / Yagya</h3>
+          <p>Powerful Havan and Yagya ceremonies to purify your space, remove negativity, and bring divine blessings to your family.</p>
+          <a href="#booking" class="card-link">Book Now →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-glow"></div>
+          <div class="service-icon">📖</div>
+          <h3>Satyanarayan Katha</h3>
+          <p>Traditional Satyanarayan Vrat Katha for fulfillment of wishes, family well-being, and divine grace of Lord Vishnu.</p>
+          <a href="#booking" class="card-link">Book Now →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-glow"></div>
+          <div class="service-icon">🪔</div>
+          <h3>Terahvi / Shradh</h3>
+          <p>Respectful Terahvi, Shradh, and Pind Daan ceremonies to honor your ancestors with proper Vedic rites and prayers.</p>
+          <a href="#booking" class="card-link">Book Now →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-glow"></div>
+          <div class="service-icon">🎂</div>
+          <h3>Birthday Puja</h3>
+          <p>Auspicious birthday puja and Janam Din celebrations with horoscope readings and blessings for long life and success.</p>
+          <a href="#booking" class="card-link">Book Now →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="card-glow"></div>
+          <div class="service-icon">🌸</div>
+          <h3>General Puja</h3>
+          <p>Navagraha Puja, Ganesh Puja, Laxmi Puja, Rudrabhishek and all other special pujas conducted at your doorstep in Lucknow.</p>
+          <a href="#booking" class="card-link">Book Now →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ HOW IT WORKS ══════════════════════════════════════ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="hiw-bg">
+      <div class="hiw-orb"></div>
+    </div>
+    <div class="section-container">
+      <div class="section-header reveal">
+        <div class="section-tag">⚙️ Process</div>
+        <h2 class="section-title">Booking a Pandit in Lucknow<br/><span class="gradient-text">Takes Just 3 Steps</span></h2>
+      </div>
+      <div class="steps-wrapper">
+        <div class="step-line"></div>
+
+        <div class="step reveal">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <div class="step-icon">📝</div>
+            <h3>Share Your Requirement</h3>
+            <p>Fill in the booking form with your puja type, preferred date & time, and location in Lucknow. Takes less than 2 minutes.</p>
+          </div>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <div class="step-icon">📲</div>
+            <h3>We Call You Within Minutes</h3>
+            <p>Our Lucknow team reviews your requirement and calls you back within 10 minutes to confirm details and match the right pandit.</p>
+          </div>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <div class="step-icon">🙏</div>
+            <h3>Pandit Assigned at Your Home</h3>
+            <p>A verified, experienced pandit arrives at your home in Lucknow at the scheduled time with all required puja samagri guidance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ BOOKING ══════════════════════════════════════ -->
+  <section class="booking" id="booking">
+    <div class="section-container">
+      <div class="booking-wrapper reveal">
+        <div class="booking-info">
+          <div class="section-tag">📞 Book Now</div>
+          <h2 class="section-title">Fill Details – Our <span class="gradient-text">Lucknow Team</span><br/>Calls You in 10 Minutes</h2>
+          <div class="booking-highlights">
+            <div class="b-highlight">⚡ Instant Response</div>
+            <div class="b-highlight">✅ Verified Pandits Only</div>
+            <div class="b-highlight">🏠 Home Service</div>
+            <div class="b-highlight">💰 Transparent Pricing</div>
+          </div>
+          <div class="contact-direct">
+            <p>Or reach us directly:</p>
+            <a href="tel:9431683881" class="contact-link">📞 9431683881</a>
+            <a href="https://wa.me/919431683881" class="contact-link" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+          </div>
+        </div>
+
+        <div class="booking-form-wrap">
+          <div class="gform-wrapper">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeKm2nr_9vNzniwl2uejdgXDOjK9xbC8jGoTSrb6xATH-GI5A/viewform?embedded=true"
+              width="100%"
+              height="640"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              title="Pandit Jii Booking Form Lucknow"
+              loading="lazy"
+            >Loading…</iframe>
+          </div>
+          <div class="form-direct-link">
+            <p>Form नहीं दिख रहा?</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKm2nr_9vNzniwl2uejdgXDOjK9xbC8jGoTSrb6xATH-GI5A/viewform" target="_blank" rel="noopener" class="btn btn-outline" style="display:inline-flex; margin-top:8px;">
+              📋 Form खोलें (New Tab में)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ ABOUT ══════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-content reveal">
+          <div class="section-tag">🕉 About Us</div>
+          <h2 class="section-title">Lucknow's Most Trusted<br/><span class="gradient-text">Pandit Booking Service</span></h2>
+          <p class="about-text">We are a dedicated platform serving families across Lucknow, Uttar Pradesh. Our mission is simple — connect you with the right pandit for every sacred occasion, without the hassle of searching.</p>
+
+          <div class="about-features">
+            <div class="about-feat">
+              <div class="feat-icon">🔍</div>
+              <div>
+                <strong>Thoroughly Verified Pandits</strong>
+                <p>Every pandit on our platform is background-verified, experienced, and trained in authentic Vedic traditions.</p>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="feat-icon">📍</div>
+              <div>
+                <strong>Purely Local — Lucknow Service</strong>
+                <p>We serve all major areas of Lucknow including Gomti Nagar, Hazratganj, Alambagh, Indira Nagar, and more.</p>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="feat-icon">☮️</div>
+              <div>
+                <strong>Peaceful & Authentic Rituals</strong>
+                <p>We ensure every puja is conducted with full devotion, correct mantras, and the spiritual atmosphere your family deserves.</p>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="feat-icon">🤝</div>
+              <div>
+                <strong>Real Human Support</strong>
+                <p>Our team in Lucknow is always available to help you plan, book, and conduct your rituals smoothly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal-right">
+          <div class="about-card-stack">
+            <div class="abt-card abt-card-1">
+              <div class="abt-card-icon">🙏</div>
+              <div>Authentic Vedic Rituals</div>
+            </div>
+            <div class="abt-card abt-card-2">
+              <div class="abt-card-icon">📍</div>
+              <div>Serving All of Lucknow</div>
+            </div>
+            <div class="abt-card abt-card-3">
+              <div class="abt-card-icon">⭐</div>
+              <div>4.9 Star Rated Service</div>
+            </div>
+            <div class="about-om">🕉</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ FOOTER ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-icon">🕉</span>
+          <span class="logo-text">PanditJii <span class="logo-highlight">Lucknow</span></span>
+        </div>
+        <p>Trusted Pandit Booking Service in Lucknow, Uttar Pradesh. Connecting families with verified pandits for all Hindu rituals.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#booking">Book Now</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Services in Lucknow</h4>
+        <a href="#booking">Griha Pravesh Puja</a>
+        <a href="#booking">Havan / Yagya</a>
+        <a href="#booking">Satyanarayan Katha</a>
+        <a href="#booking">Terahvi / Shradh</a>
+        <a href="#booking">Birthday Puja</a>
+      </div>
+      <div class="footer-contact-col">
+        <h4>Contact Us</h4>
+        <a href="tel:9431683881">📞 9431683881</a>
+        <a href="mailto:surya286351@gmail.com">✉️ surya286351@gmail.com</a>
+        <div class="footer-address">📍 Lucknow, Uttar Pradesh, India</div>
+        <a href="https://wa.me/919431683881" class="footer-wa" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 PanditJiiBooking Lucknow. All Rights Reserved. | Service Area: Lucknow, Uttar Pradesh</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════ FLOATING BUTTONS ══════════════════════════════════════ -->
+  <a href="https://wa.me/919431683881" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <!-- Thank You Popup -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-box">
+      <div class="popup-icon">🙏</div>
+      <h3>Booking Request Received!</h3>
+      <p>Thank you! Our Lucknow team will call you within <strong>10 minutes</strong> to confirm your pandit booking.</p>
+      <div class="popup-contact">📞 You can also call us directly: <a href="tel:9431683881">9431683881</a></div>
+      <button class="btn btn-primary" id="popupClose">Got It!</button>
     </div>
   </div>
-</section>
 
-<section class="services" id="services">
-  <h2>Our Services</h2>
-  <div class="service-grid">
-    <div class="service">Griha Pravesh Puja</div>
-    <div class="service">Havan / Yagya</div>
-    <div class="service">Terahvi / Shradh</div>
-    <div class="service">Satyanarayan Katha</div>
-    <div class="service">Birthday Pooja</div>
-    <div class="service">General Pooja</div>
-  </div>
-</section>
-
-<section class="form" id="contact">
-  <h2>Request a Callback</h2>
-
-  <iframe id="gform"
-    src="https://forms.gle/qYsSDQTXcnC1bwSt6?embedded=true"
-    loading="lazy">
-  </iframe>
-</section>
-
-<section class="about">
-  <h2>About Us</h2>
-  <p>
-    Book trusted pandit ji near you for all Hindu rituals with proper guidance.
-  </p>
-  <div class="about-box">
-    ✔ Verified Pandits &nbsp; ✔ Human Support &nbsp; ✔ Clear Guidance
-  </div>
-</section>
-
-<footer>
-  📞 9431683881 | ✉️ surya286351@gmail.com <br>
-  © 2026 Pandit Booking
-</footer>
-
-<div id="thankYou">
-  <div class="thank-box">
-    <h2>🙏 Thank You!</h2>
-    <p>Your request has been received.<br>We will call you shortly.</p>
-  </div>
-</div>
-
-<script>
-function toggleMenu(){
-  document.getElementById("navLinks").classList.toggle("show");
-}
-function scrollToForm(){
-  document.getElementById("contact").scrollIntoView({behavior:"smooth"});
-}
-let firstLoad = true;
-document.getElementById("gform").addEventListener("load", function(){
-  if(!firstLoad){
-    document.getElementById("thankYou").style.display="flex";
-    window.scrollTo({top:0,behavior:"smooth"});
-  }
-  firstLoad = false;
-});
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
